@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url(css/button.css);
+@import url(css/flip-card.css);
+@import url(css/form.css);
+@import url(css/footer.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 227, 235);
+    color: rgb(27, 23, 23);
+}
+
+
+#img_header {
+    position: relative;
+    background-image: url(../img/img_header.jpeg);
+    background-size: cover;
+    background-position: center center;
+    /*immagine centrata*/
+    height: 100vh;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    height: 100vh;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(248, 248, 249);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 5px;
+    background-color: rgba(11, 13, 71, 0.30);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/************NAVBAR***************************/
+#navbar {
+    position: fixed;
+    background-color: rgba(11, 13, 71, 0.90);
+    width: 100%;
+    height: 8vh;
+    z-index: 1;
+}
+
+#navbar a {
+    color: #F4F2EE;
+    text-decoration: none;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+/*********************FINE************************/
+
+
+
+.titolo h2 {
+    text-align: center;
+}
+
+/*****************CONTAINER******************/
+
+.container-flex {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+
+.container-text {
+    width: calc(100% / 2);
+    margin: 50px;
+    text-align: center;
+    /* border: 1px solid black */
+}
+
+
+/********************FINE***********************/
+
+
+
+
+
+/**************CONTATTI*********************/
+.calendario {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.month {
+    width: 100%;
+    background: rgba(11, 13, 71, 0.9);
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 11%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: rgba(11, 13, 71, 0.9);
+    border: 2px solid rgba(11, 13, 71, 0.9);
+    border-radius: 50%;
+    color: white;
+}
+
+/*****************FINE************************/
+
+
+
+.contacts-and-scheduling {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+.item {
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/*****************************MEDIA QUERY*************************/
+@media only screen and (max-width: 768px) {
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar {
+        position: fixed;
+        background-color: rgba(11, 13, 71, 0.90);
+        width: 100%;
+        z-index: 1;
+        height: 20vh;
+    }
+
+  
+    #navbar ul {
+        list-style: none;
+        padding: 0;
+        justify-content:center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    #navbar ul {
+        margin-top: 10px;
+    }
+
+    .header-text {
+        text-align: center; 
+    }
+   
+    .flip-card {
+        width: calc(100% / 1); 
+    }
+
+    .contacts-and-scheduling .item {
+        width: calc(80% - 10px); 
+        margin: 20px; 
+        padding: 20px;
+    }
+
+    .container-text {
+        width: auto;
+    }
+
+}
