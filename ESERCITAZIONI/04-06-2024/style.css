@@ -1,0 +1,55 @@
+body{
+    background-color: #DF817A;
+}
+
+.container{
+    background-color: #FDF0D5;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.imgDiv{
+    width: 400px;
+    height: 400px;
+    background-image: url("./3646431-Photoroom.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+
+h1{
+    text-align: center;
+    color:#780000;
+    font-family: "Pacifico", cursive;
+}
+
+.timeDiv{
+    text-align: center;
+}
+
+.timeDiv p {
+    font-size: 35px; 
+}
+
+button{
+    background-color: #780000;
+    opacity: 0.9;
+    color: #FDF0D5;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+button:hover{
+    opacity: 1;
+}
