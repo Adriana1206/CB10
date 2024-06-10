@@ -4,20 +4,14 @@ const container = document.querySelector('.movies');
 const searchBarEl = document.querySelector(".searchbar");
 const popular = document.querySelector("#popular");
 const topRated = document.querySelector("#topRated");
-
 let currentPage = 1;
 let totalPages = 0;
 let film = [];
 const BASE_URL = "https://api.themoviedb.org/3/";
-
 const urlPopular= BASE_URL + "movie/popular?language=en-US";
 const urlTopRated = BASE_URL + "discover/movie?include_adult=false&include_video=false&language=en-US";
 const urlTopRatedParams = "&sort_by=vote_average.desc&without_genres=99,10755&vote_count.gte=200";
-
 let isTopRated = false;
-
-
-
 
 async function fetchMoviesFiltered(title = '', pageNumber, url) {
     const options = {
