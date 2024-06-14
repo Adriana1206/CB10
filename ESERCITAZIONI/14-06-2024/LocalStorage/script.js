@@ -1,4 +1,5 @@
 var modal = document.getElementById('id01');
+var errorModal = document.getElementById('errorModal');
 var initialLoginBtn = document.getElementById('initialLoginBtn');
 var logoutBtn = document.getElementById('logoutBtn');
 const loggedUser = document.querySelector(".loggedUser");
@@ -25,7 +26,7 @@ loginBtnModale.addEventListener('click', (event) => {
         logoutBtn.style.display = "block";
         loggedUser.textContent = `Login effettuato dall'utente: ${userName.value}`;
     } else {
-        alert("Password errata"); 
+        errorModal.style.display = "block";
     }
 });
 
