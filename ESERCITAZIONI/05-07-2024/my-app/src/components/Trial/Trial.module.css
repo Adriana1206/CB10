@@ -1,21 +1,21 @@
-h1,h2{
+h1, h2 {
     text-align: center;
 }
 
-.trialContainer{
+.trialContainer {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
     width: 40%;
-    height: 25rem;
+    height: 20rem;
     border-radius: 15px;
     background: rgba(255, 255, 255, 1);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px 0;
 }
 
-.pricingContainer{
+.pricingContainer {
     width: auto;
     display: flex;
     flex-direction: row;
@@ -24,20 +24,138 @@ h1,h2{
     /* border: 1px solid black; */
 }
 
-.billing{
+.billing {
     display: flex;
-    flex-direction:row;
-    gap: 5rem;
+    flex-direction: row;
+    gap: 2rem;
     align-items: center;
+    color: grey;
     /* border: 1px solid black; */
 }
 
-.featuresContainer{
+.featuresContainer {
     display: flex;
-    flex-direction:row;
-    gap: 15rem;
+    flex-direction: row;
+    gap: 11rem;
     align-items: center;
     width: 100%;
-    border-top: 1px solid black;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    color: grey;
     /* border: 1px solid black; */
+    margin-top: 2rem;
 }
+
+.featuresContainer ul {
+    list-style-type: none;
+}
+
+button {
+    background-color: rgba(39, 52, 86, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    width: 9rem;
+    padding: 0.5rem;
+    border: none;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(39, 52, 86, 0.9);
+}
+
+.month p {
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.month span {
+    font-size: small;
+    font-weight: 100;
+}
+
+.pageviews p {
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.discount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discount div {
+    background: rgba(224, 181, 167, 0.5);
+    border-radius: 2rem;
+    color: rgb(241, 146, 127);
+    text-align: center;
+    font-size: small;
+    width: 7rem;
+    height: 1rem;
+}
+
+/* toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #007bff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+.range{
+    width: 80%;
+}
+
+.rangeInput {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.rangeInput::-webkit-slider-thumb {
+    background-color: #007bff; 
+    cursor: pointer; 
+    border: 2px solid #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
