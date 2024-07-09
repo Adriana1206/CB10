@@ -1,0 +1,41 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #242424;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+  
+  .inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .inputGroup input,
+  .inputGroup select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+
+  .songsList {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #242424;
+  }
+  
+  .songItem {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
