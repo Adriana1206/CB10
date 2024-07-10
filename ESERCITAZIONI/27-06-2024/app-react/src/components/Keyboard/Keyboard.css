@@ -1,8 +1,0 @@
-.container{
-    display: grid;
-    /* border: 1px solid white; */
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 5px; 
-    margin: auto; 
-    padding: 15px; 
-}
