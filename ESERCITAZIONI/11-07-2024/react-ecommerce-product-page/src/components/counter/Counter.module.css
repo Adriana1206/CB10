@@ -1,0 +1,16 @@
+.counter{
+    background-color: var(--LightGrayishBlue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.counter button{
+    all:unset;  /* toglie gli stili di default */
+    padding: 8px 16px;
+}
+
+.counter div{
+    text-align: center;
+}
