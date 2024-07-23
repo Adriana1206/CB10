@@ -1,7 +1,11 @@
 export const labels = {
-	academyList: "Lista dei Corsi",
 	courseTableTitle: "Titolo",
-	courseTableInstructor: "Istruttore",
+	courseTableInstructor: "Autore",
 	courseTableCategory: "Categoria",
-	courseTableDuration: "Durata"
+	courseTableDuration: "Durata",
+	academyTitle: "Lista dei Corsi",
+	academyTableBtnDetail: "Details",
+	academyList: "Lista dei Corsi",
+
+	navHome: "Home"
   };

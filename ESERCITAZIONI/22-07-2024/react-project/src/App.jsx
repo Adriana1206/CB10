@@ -60,7 +60,7 @@ function App() {
                     </td>
                     <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                       {course.instructor}
-                    </td>
+                    </td> 
                     <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                       {course.category}
                     </td>
@@ -68,12 +68,12 @@ function App() {
                       {course.duration}
                     </td>
                     <td className="whitespace-nowrap px-4 py-2">
-                      <a
-                        href="#"
+                      <Link
+                        to={`/books/${book.id}`}
                         className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                       >
-                        View
-                      </a>
+                        {labels.academyTableBtnDetail}
+                      </Link>
                     </td>
                   </tr>
                 ))}
