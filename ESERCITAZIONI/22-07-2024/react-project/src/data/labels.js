@@ -1,7 +1,7 @@
 export const labels = {
-	AcademyProTitle: "Title",
-	AcademyProAuthor: "Author",
-	AcademyProGenre: "Genre",
-	
-	AcademyProList: "Academy list"
-}
+	academyList: "Lista dei Corsi",
+	courseTableTitle: "Titolo",
+	courseTableInstructor: "Istruttore",
+	courseTableCategory: "Categoria",
+	courseTableDuration: "Durata"
+  };
