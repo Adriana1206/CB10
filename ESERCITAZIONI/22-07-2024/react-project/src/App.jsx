@@ -1,6 +1,7 @@
 import { labels } from "./data/labels";
 import { useEffect, useState } from "react";
 import { getAcademyList } from "./api/AcademyClient";
+import { Link } from 'react-router-dom';
 
 function App() {
   const [academyList, setAcademyList] = useState([]);
@@ -68,12 +69,12 @@ function App() {
                       {course.duration}
                     </td>
                     <td className="whitespace-nowrap px-4 py-2">
-                      <a
-                        href="#"
+                      <Link
+                        to={`/courses/${course.id}`}
                         className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                       >
-                        View
-                      </a>
+                        {labels.academyTableBtnDetail}
+                      </Link>
                     </td>
                   </tr>
                 ))}
