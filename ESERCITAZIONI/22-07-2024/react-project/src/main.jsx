@@ -5,7 +5,9 @@ import "./index.css";
 import DefaultLayout from "./layouts/DefaultLayout.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import {AcademyDetailPage} from "./pages/AcademyDetailPage.jsx";
+import AcademyDetailPage from "./pages/AcademyDetailPage.jsx";
+
+
 
 const router = createBrowserRouter([
   {

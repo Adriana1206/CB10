@@ -90,7 +90,7 @@ function AcademyDetailPage() {
                   {list.title}
                 </h1>
                 <p className="text-base font-regular leading-7 text-indigo-600">
-                  {list.author}
+                  {list.instructor}
                 </p>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
                   {list.description}
@@ -106,7 +106,7 @@ function AcademyDetailPage() {
             <img
               alt=""
               src={list.cover}
-              className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+              className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[40rem]"
             />
           )}
         </div>
