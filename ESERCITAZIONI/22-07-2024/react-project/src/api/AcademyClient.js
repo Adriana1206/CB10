@@ -47,3 +47,25 @@ export const getAcademyList = (id) => {
     }, 2000);
   });
 };
+
+
+export const addAcademyCourse = (body) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({
+        ...body,
+        id: crypto.randomUUID(),
+      });
+    }, 3000);
+  });
+};
+
+export const editAcademyCourse = (body) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({
+        ...body,
+      });
+    }, 3000);
+  });
+};
