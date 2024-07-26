@@ -7,5 +7,7 @@ export const labels = {
 	academyTableBtnDetail: "Details",
 	academyList: "Lista dei Corsi",
 
-	navHome: "Home"
+	navHome: "Home",
+	edit: "Edit",
+	delete: "Delete"
   };
