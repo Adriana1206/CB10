@@ -1,0 +1,210 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "title": "React Basics",
+      "category": "Informatica",
+      "instructor": "Mario Rossi",
+      "duration": "3 hours"
+    },
+    {
+      "id": "2",
+      "title": "Advanced CSS",
+      "category": "Informatica",
+      "instructor": "Giulia Verdi",
+      "duration": "4 hours"
+    },
+    {
+      "id": "3",
+      "title": "Node.js for Beginners",
+      "category": "Informatica",
+      "instructor": "Luca Bianchi",
+      "duration": "2 hours"
+    },
+    {
+      "id": "4",
+      "title": "Python for Data Science",
+      "category": "Informatica",
+      "instructor": "Anna Russo",
+      "duration": "5 hours"
+    },
+    {
+      "id": "5",
+      "title": "Introduction to Machine Learning",
+      "category": "Informatica",
+      "instructor": "Paolo Neri",
+      "duration": "6 hours"
+    },
+    {
+      "id": "6",
+      "title": "Digital Marketing Fundamentals",
+      "category": "Marketing",
+      "instructor": "Elena Gallo",
+      "duration": "3 hours"
+    },
+    {
+      "id": "7",
+      "title": "Project Management Essentials",
+      "category": "Business",
+      "instructor": "Francesco Ricci",
+      "duration": "4 hours"
+    },
+    {
+      "id": "8",
+      "title": "Introduction to Cybersecurity",
+      "category": "Informatica",
+      "instructor": "Roberto Moretti",
+      "duration": "5 hours"
+    },
+    {
+      "id": "9",
+      "title": "Creative Writing",
+      "category": "Arts",
+      "instructor": "Lara Bianchi",
+      "duration": "6 hours"
+    },
+    {
+      "id": "10",
+      "title": "Financial Analysis",
+      "category": "Finance",
+      "instructor": "Marco Conti",
+      "duration": "7 hours"
+    },
+    {
+      "id": "11",
+      "title": "Introduction to Photography",
+      "category": "Arts",
+      "instructor": "Sofia Lombardi",
+      "duration": "4 hours"
+    },
+    {
+      "id": "12",
+      "title": "Blockchain Basics",
+      "category": "Informatica",
+      "instructor": "Alessandro Fabbri",
+      "duration": "3 hours"
+    }
+  ],
+  "course_details": [
+    {
+      "id": "1",
+      "title": "React Basics",
+      "category": "Informatica",
+      "instructor": "Mario Rossi",
+      "duration": "3 hours",
+      "genre": "Programming",
+      "description": "Learn the basics of React.",
+      "cover": "https://miro.medium.com/v2/resize:fit:680/1*C4yGTDSLSz86TCakrza2HQ.jpeg"
+    },
+    {
+      "id": "2",
+      "title": "Advanced CSS",
+      "category": "Informatica",
+      "instructor": "Giulia Verdi",
+      "duration": "4 hours",
+      "genre": "Design",
+      "description": "Master advanced CSS techniques.",
+      "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgq3ySvdsfVDPeTC_Ep4mrnpifaii2-PQtRQ&s"
+    },
+    {
+      "id": "3",
+      "title": "Node.js for Beginners",
+      "category": "Informatica",
+      "instructor": "Luca Bianchi",
+      "duration": "2 hours",
+      "genre": "Programming",
+      "description": "Get started with Node.js.",
+      "cover": "https://media.geeksforgeeks.org/wp-content/uploads/20230726113229/Concept-of-nodejs.webp"
+    },
+    {
+      "id": "4",
+      "title": "Python for Data Science",
+      "category": "Informatica",
+      "instructor": "Anna Russo",
+      "duration": "5 hours",
+      "genre": "Data Science",
+      "description": "Learn how to use Python for data analysis and visualization.",
+      "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"
+    },
+    {
+      "id": "5",
+      "title": "Introduction to Machine Learning",
+      "category": "Informatica",
+      "instructor": "Paolo Neri",
+      "duration": "6 hours",
+      "genre": "Artificial Intelligence",
+      "description": "An introductory course on machine learning concepts and techniques.",
+      "cover": "https://miro.medium.com/v2/resize:fit:1400/1*2tW2p5JmGoeXgXrGxsKi-Q.jpeg"
+    },
+    {
+      "id": "6",
+      "title": "Digital Marketing Fundamentals",
+      "category": "Marketing",
+      "instructor": "Elena Gallo",
+      "duration": "3 hours",
+      "genre": "Marketing",
+      "description": "Understand the basics of digital marketing strategies and tools.",
+      "cover": "https://blog.hubspot.com/hubfs/digital_marketing.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Project Management Essentials",
+      "category": "Business",
+      "instructor": "Francesco Ricci",
+      "duration": "4 hours",
+      "genre": "Management",
+      "description": "Learn the essential skills for effective project management.",
+      "cover": "https://www.invensislearning.com/blog/wp-content/uploads/2021/06/Project-Management-1.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Introduction to Cybersecurity",
+      "category": "Informatica",
+      "instructor": "Roberto Moretti",
+      "duration": "5 hours",
+      "genre": "Security",
+      "description": "An introduction to cybersecurity principles and practices.",
+      "cover": "https://www.cyberark.com/wp-content/uploads/2021/05/cybersecurity-courses-banner.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Creative Writing",
+      "category": "Arts",
+      "instructor": "Lara Bianchi",
+      "duration": "6 hours",
+      "genre": "Writing",
+      "description": "Develop your creative writing skills with expert guidance.",
+      "cover": "https://cdn.writingcooperative.com/images/Cover%20images-1.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Financial Analysis",
+      "category": "Finance",
+      "instructor": "Marco Conti",
+      "duration": "7 hours",
+      "genre": "Finance",
+      "description": "Learn to analyze financial statements and make data-driven decisions.",
+      "cover": "https://www.investopedia.com/thmb/CtTGDAAQQpqYHLJQyZ_J1_x-EO4=/2121x1414/filters:fill(auto,1)/financial-analysis-5192802-hero-01-b46b5af1f19945129f1adba79afec087.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Introduction to Photography",
+      "category": "Arts",
+      "instructor": "Sofia Lombardi",
+      "duration": "4 hours",
+      "genre": "Photography",
+      "description": "Learn the basics of photography, from composition to lighting.",
+      "cover": "https://content.phototraces.com/wp-content/uploads/2016/09/Beginner-Photography-Featured-1200x800.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Blockchain Basics",
+      "category": "Informatica",
+      "instructor": "Alessandro Fabbri",
+      "duration": "3 hours",
+      "genre": "Technology",
+      "description": "Understand the fundamentals of blockchain technology.",
+      "cover": "https://blockgeeks.com/wp-content/uploads/2020/01/blockchain-banner.jpg"
+    }
+  ]
+}
