@@ -1,13 +1,13 @@
 export const labels = {
-	courseTableTitle: "Titolo",
+	courseTableTitle: "Course Catalog",
 	courseTableInstructor: "Autore",
 	courseTableCategory: "Categoria",
 	courseTableDuration: "Durata",
 	academyTitle: "Lista dei Corsi",
 	academyTableBtnDetail: "Details",
-	academyList: "Lista dei Corsi",
+	academyList: "Search",
 
 	navHome: "Home",
 	edit: "Edit",
 	delete: "Delete"
-  };
+  }; 

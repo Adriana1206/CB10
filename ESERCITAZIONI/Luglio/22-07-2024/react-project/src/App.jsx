@@ -5,12 +5,15 @@ import { Link } from 'react-router-dom';
 
 function App() {
   const [academyList, setAcademyList] = useState([]);
+  const [filteredAcademyList, setFilteredAcademyList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const getList = async () => {
     try {
       const data = await getAcademyList();
       setAcademyList(data);
+      setFilteredAcademyList(data); // Inizialmente mostra tutti i corsi
     } catch (error) {
       console.log("Errore:", error);
     } finally {
@@ -22,6 +25,15 @@ function App() {
     getList();
   }, []);
 
+  useEffect(() => {
+    // Filtra la lista dei corsi 
+    const filtered = academyList.filter(course =>
+      course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      course.instructor.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      course.category.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredAcademyList(filtered);
+  }, [searchTerm, academyList]);
 
   if (isLoading) return <p>Loading...</p>;
 
@@ -29,8 +41,17 @@ function App() {
     <>
       <div className="flex justify-center">
         <main className="w-[1200px] ">
-          <div className="p-4 ">
-            <h1>{labels.academyList}</h1>
+          <div className="p-4 flex items-center">
+            <h1 className="mr-8">{labels.academyList}</h1>
+            <div className="flex items-center">
+              <input
+                type="text"
+                placeholder="Search courses..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="p-2 border border-gray-300 rounded"
+              />
+            </div>
           </div>
 
           <div className="overflow-x-auto">
@@ -54,7 +75,7 @@ function App() {
               </thead>
 
               <tbody className="divide-y divide-gray-200">
-                {academyList.map((course) => (
+                {filteredAcademyList.map((course) => (
                   <tr key={course.id}>
                     <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
                       {course.title}
@@ -79,7 +100,7 @@ function App() {
                         to={`/edit/${course.id}`}
                         className="inline-block rounded bg-green-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                       >
-                        {labels.delete}
+                        {labels.edit}
                       </Link>
                       <button
                         onClick={() => handleDelete(course.id)}
