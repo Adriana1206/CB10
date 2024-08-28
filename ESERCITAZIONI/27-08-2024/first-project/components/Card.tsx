@@ -7,8 +7,8 @@ interface ICardProps {
     src: string;
   };
 }
-
-const Card: React.FC<ICardProps> = ({ post }) => {
+//  const Card: React.FC<ICardProps> = ({ post }) =>
+const Card = ({ post }:ICardProps) => {
   return (
     <article className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col max-w-xl w-full">
       <a href={post.src} className="block flex flex-col h-full">
