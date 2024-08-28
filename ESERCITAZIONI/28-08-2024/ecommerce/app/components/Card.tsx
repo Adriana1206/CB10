@@ -5,16 +5,18 @@ interface Icard {
         title: string;
         description: string;
         price: number;
-        images: string;
+        images: string[];
     }
 }
 
 function Card({product}:Icard) {
+
+    const [image] = product.images;
     return (
         <a href="#" className="group relative block bg-black">
             <img
                 alt=""
-                src={product.images}
+                src={image}
                 className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
             />
 
