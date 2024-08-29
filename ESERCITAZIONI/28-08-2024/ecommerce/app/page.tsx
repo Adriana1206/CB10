@@ -1,7 +1,10 @@
 "use client";
 
+
+//useTransition, hook utilizzata durante gli aggiornamenti che potrebbero richiedere tempo
 import { useState, useEffect, useTransition } from "react";
 import Card from './components/Card';
+import Form from "./components/Form";
 
 // Interfaccia che descrive la struttura dei dati del prodotto
 interface IProduct {
@@ -13,6 +16,9 @@ interface IProduct {
 }
 
 const Home = () => {
+  /*([]) valore iniziale dello stato (array vuoto)
+    IProduct[], products è un array di oggetti che seguono la struttura definita dall'interfaccia IProduct
+  */
   const [products, setProducts] = useState<IProduct[]>([]); 
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
@@ -27,7 +33,7 @@ const Home = () => {
         }
         const data = await res.json();
         setProducts(data.products); 
-      } catch (error: unknown) {
+      } catch (error: unknown) {  //unknown per gestire qualsiasi tipo di errore
         const message =
           error instanceof Error
             ? error.message
@@ -54,6 +60,7 @@ const Home = () => {
           !isPending && <p>No product data available</p>
         )}
       </div>
+      <Form/>
     </div>
   );
 };

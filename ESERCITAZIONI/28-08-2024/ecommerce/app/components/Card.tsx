@@ -40,3 +40,7 @@ function Card({product}:Icard) {
 }
 
 export default Card
+
+
+
+
