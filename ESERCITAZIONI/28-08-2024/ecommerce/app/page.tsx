@@ -60,7 +60,7 @@ const Home = () => {
           !isPending && <p>No product data available</p>
         )}
       </div>
-      <Form/>
+      <Form/> 
     </div>
   );
 };
